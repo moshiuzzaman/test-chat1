@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <title>Chatbox</title>
+</head>
+<body>
+  <div id="cems__root" class="cems__container">
+  </div>
+  <script src="./assets/js/agora-rtm-sdk-1.4.3.js"></script>
+  <script src="./assets/js/AgoraRTC_N-4.7.3.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./assets/js/agora.min.js"></script>
+  <script>
+    let appId = "9726a69c2bd448108598e9e5a3d7e0d4";
+    let email = 'user4@gmail.com'
+    let pass = '123456'
+    cemsChatInit(email, pass, appId)
+  </script>
+</body>
+
+</html>
