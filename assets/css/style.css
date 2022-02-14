@@ -24,9 +24,10 @@ body {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 100%;
-  background:url('./webpage.png');
-  background-size: auto;
+  background: url(./webpage.png);
+  background-size: cover;
   background-repeat: no-repeat;
+  height: 200vh;
 
 }
 /* width */
