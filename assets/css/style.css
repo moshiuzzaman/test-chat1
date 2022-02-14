@@ -24,7 +24,10 @@ body {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 100%;
-  background: #f1f1f1;
+  background:url('./webpage.png');
+  background-size: auto;
+  background-repeat: no-repeat;
+
 }
 /* width */
 ::-webkit-scrollbar {
@@ -52,7 +55,7 @@ body {
   background: #f9f9f9;
   height: 438px;
   width: 390px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  box-shadow:  rgb(0 0 0 / 39%) 0px 0px 15px;
   border-radius: 20px;
   position: fixed;
   right: 32px;
