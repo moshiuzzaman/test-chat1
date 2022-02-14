@@ -43,6 +43,7 @@ div#cems__chatbox__button button {
     width: 70px;
     height: 70px;
     border-radius: 500px;
+    box-shadow:  rgb(0 0 0 / 39%) 0px 0px 15px;;
   }
 img.arrowIcon {
     padding-top: 6px;
