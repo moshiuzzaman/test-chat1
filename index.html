@@ -3,28 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/chat.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <style>
+      body {
+        background: url(./webpage.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200vh;
+      }
+    </style>
     <title>Chatbox</title>
   </head>
   <body>
-    <!-- <button id="login">login</button>
-    <button id="logout">logout</button> -->
-    <div id="bs__root" class="cems__container"></div>
+    <div id="bs__chat__root" class="cems__container"></div>
 
     <script src="https://cdn.jsdelivr.net/gh/moshiuzzaman/CDN@master/agora-rtm-sdk-1.4.4.js"></script>
     <script src="https://download.agora.io/sdk/release/AgoraRTC_N-4.8.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="./assets/js/addInBody.js"></script>
-    <script src="./assets/js/demoData.js"></script>
-    <script src="./assets/js/agora.js"></script>
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/Chatbox.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/moshiuzzaman/CDN@master/bsagorasdk-1.7.min.js"></script>
     <script>
       let email = "user3@gmail.com";
       let pass = "123456";
-      let rington = "https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_700KB.mp3";
+      let rington =
+        "https://pl3dxz-a.akamaihd.net/downloads/ringtones/files/mp3/18862-download-dj-best-baby-laughing-remix-mobile-ringtone-ringtone-funny-r-53413.mp3";
       let callerTune = "https://audio.jukehost.co.uk/2OdnBtHkBRWn76r6YiNesNpb5PTNEg5b";
       let tokenUrl = "https://agora-token-generator-bs23.herokuapp.com";
       // let appId = "32ce8b468e644fb6986400e62b7a6486";
@@ -33,12 +36,12 @@
       let appCertificate = "19b3864a40d04e949611b93c8e337257";
       // paramiter formate (email, pass, appId, rington, callerTune, tokenUrl, appCertificate)
       bsChatInit(email, pass, appId, tokenUrl, appCertificate, rington, callerTune);
-      document.getElementById("login").addEventListener("click", () => {
-        bsChatInit(email, pass, appId, tokenUrl, appCertificate, rington, callerTune);
-      });
-      document.getElementById("logout").addEventListener("click", () => {
-        logoutFromAgora();
-      });
+      // document.getElementById("login").addEventListener("click", () => {
+      //   bsChatInit(email, pass, appId, tokenUrl, appCertificate, rington, callerTune);
+      // });
+      // document.getElementById("logout").addEventListener("click", () => {
+      //   logoutFromAgora();
+      // });
     </script>
   </body>
 </html>
